@@ -2,7 +2,11 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-// Função para converter TXT para JSON
+/**
+ * Função para converter TXT para JSON
+ * @param {*} txtFilePath 
+ * @param {*} jsonFilePath 
+ */
 function txtToJson(txtFilePath, jsonFilePath) {
     const data = fs.readFileSync(txtFilePath, 'utf-8');
     const lines = data.split('\n');
@@ -37,14 +41,24 @@ function txtToJson(txtFilePath, jsonFilePath) {
     console.log('TXT to JSON conversion completed.');
 }
 
-// Exemplo de uso
+/**
+ * Exemplo de conversão TXT para JSON
+ */
 const txtFile = 'report.txt';
 const jsonFile = 'output.json';
 
-// Convertendo TXT para JSON
+/**
+ * Convertendo TXT para JSON 
+ */
 txtToJson(txtFile, jsonFile);
 
-// Função para converter JSON para CSV
+/******************************************/
+
+/**
+ * Função para converter JSON para CSV
+ * @param {*} jsonFilePath 
+ * @param {*} csvFilePath 
+ */
 function jsonToCsv(jsonFilePath, csvFilePath) {
     const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, 'utf-8'));
 
@@ -57,3 +71,13 @@ function jsonToCsv(jsonFilePath, csvFilePath) {
         console.log('JSON to CSV conversion completed.');
     });
 }
+
+/**
+ * Exemplo de conversão JSON para CSV
+ */
+const csvFile = 'output.csv';
+
+/**
+ * Convertendo JSON para CSV 
+ */ 
+jsonToCsv(jsonFile, csvFile);
