@@ -43,3 +43,17 @@ const jsonFile = 'output.json';
 
 // Convertendo TXT para JSON
 txtToJson(txtFile, jsonFile);
+
+// Função para converter JSON para CSV
+function jsonToCsv(jsonFilePath, csvFilePath) {
+    const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, 'utf-8'));
+
+    const csvWriter = createCsvWriter({
+        path: csvFilePath,
+        header: Object.keys(jsonData[0]).map(key => ({ id: key, title: key }))
+    });
+
+    csvWriter.writeRecords(jsonData).then(() => {
+        console.log('JSON to CSV conversion completed.');
+    });
+}
