@@ -42,19 +42,6 @@ function txtToJson(txtFilePath, jsonFilePath) {
 }
 
 /**
- * Exemplo de conversão TXT para JSON
- */
-const txtFile = 'report.txt';
-const jsonFile = 'output.json';
-
-/**
- * Convertendo TXT para JSON 
- */
-txtToJson(txtFile, jsonFile);
-
-/******************************************/
-
-/**
  * Função para converter JSON para CSV
  * @param {*} jsonFilePath 
  * @param {*} csvFilePath 
@@ -73,9 +60,16 @@ function jsonToCsv(jsonFilePath, csvFilePath) {
 }
 
 /**
- * Exemplo de conversão JSON para CSV
+ * Arquivos de input e output
  */
+const txtFile = 'report.txt';
+const jsonFile = 'output.json';
 const csvFile = 'output.csv';
+
+/**
+ * Convertendo TXT para JSON 
+ */
+txtToJson(txtFile, jsonFile);
 
 /**
  * Convertendo JSON para CSV 
