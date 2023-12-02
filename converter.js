@@ -27,7 +27,9 @@ function txtToJson(txtFilePath, jsonFilePath) {
             }
 
             if (key && value) {
-                currentData[key.trim()] = value.trim();
+                const trimmedKey = key.trim();
+                const trimmedValue = value.trim();
+                currentData[trimmedKey] = !isNaN(trimmedValue) ? parseFloat(trimmedValue) : trimmedValue;
             }
         }
     });
