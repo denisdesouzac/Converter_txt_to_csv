@@ -12,7 +12,7 @@ Um conversor simples de arquivos TXT com notação JSON para arquivos CSV. Este 
 1. **Clone o repositório:**
 
     ```bash
-    git clone https://github.com/seu_usuario/nome_do_repositorio.git
+    git clone https://github.com/denisdesouzac/Converter_txt_to_csv.git
     ```
 
 2. **Executar o conversor:**
