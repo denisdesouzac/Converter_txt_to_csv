@@ -33,7 +33,16 @@ Um conversor simples de arquivos TXT com notação JSON para arquivos CSV. Este 
 
 ```json
 {
-  "nome": "Exemplo",
-  "idade": 30,
-  "email": "exemplo@email.com"
+  "pessoa": {
+    "nome": "Pedro",
+    "idade": 23,
+    "casado": false,
+    "endereço": {
+      "rua": "Rua das Flores",
+      "número": 123,
+      "cidade": "Porto Alegre"
+    },
+    "telefones": ["35-99999-9999", "35-7070-7070"]
+  }
 }
+
