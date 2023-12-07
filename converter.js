@@ -90,17 +90,15 @@ if (process.argv.length <= 2) {
         const jsonFile = 'output.json';
         console.log('Nenhum parametro passado. Usando arquivo padrao: output.json');
     }
-
+}
         /**
      * Convertendo TXT para JSON 
      */
-    txtToJson(txtFile, jsonFile);
+        txtToJson(txtFile, jsonFile);
 
-    /**
-     * Convertendo JSON para CSV 
-     */ 
-    jsonToCsv(jsonFile, csvFile);
-
-}
+        /**
+         * Convertendo JSON para CSV 
+         */ 
+        jsonToCsv(jsonFile, csvFile);
 
 
