@@ -1,0 +1,38 @@
+StationID: WMS1
+LocationID:
+Latitude: 0.0
+Longitude: 0.0
+Altitude: -1073741824
+idStation: WMS1
+Temperature: -1.073741824E9
+Humidity: -1.073741824E9
+Wind Speed: -1.073741824E9
+Precipitation: -1.073741824E9
+Air Pressure: -1.073741824E9
+getSensorCount: 1
+************************
+StationID: WMS1
+LocationID:
+Latitude: 0.0
+Longitude: 0.0
+Altitude: -1073741824
+idStation: WMS1
+Temperature: -1.073741824E9
+Humidity: -1.073741824E9
+Wind Speed: -1.073741824E9
+Precipitation: -1.073741824E9
+Air Pressure: -1.073741824E9
+getSensorCount: 1
+************************
+StationID: WMS1
+LocationID:
+Latitude: 0.0
+Longitude: 0.0
+Altitude: -1073741824
+idStation: WMS1
+Temperature: -1.073741824E9
+Humidity: -1.073741824E9
+Wind Speed: -1.073741824E9
+Precipitation: -1.073741824E9
+Air Pressure: -1.073741824E9
+getSensorCount: 1
