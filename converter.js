@@ -73,11 +73,11 @@ if (process.argv.length <= 2) {
     console.log('Nenhum parametro passado. Usando arquivos padroes: report.txt, output.json e output.csv');
 } else {
     const txtFile = process.argv[2];
-    console.log('input_txt:', argumento1);
+    console.log('input_txt:', txtFile);
 
     if (process.argv.length > 3) {
         const csvFile = process.argv[3];
-        console.log('output_csv:', argumento2);
+        console.log('output_csv:', csvFile);
     } else {
         const csvFile = 'output.csv';
         console.log('Nenhum parametro passado. Usando arquivo padrao: output.csv');
@@ -85,7 +85,7 @@ if (process.argv.length <= 2) {
 
     if (process.argv.length > 4) {
         const jsonFile = process.argv[4];
-        console.log('output_json:', argumento3);
+        console.log('output_json:', jsonFile);
     } else {
         const jsonFile = 'output.json';
         console.log('Nenhum parametro passado. Usando arquivo padrao: output.json');
