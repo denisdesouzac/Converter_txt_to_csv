@@ -7,6 +7,11 @@ Um conversor simples de arquivos TXT com notação JSON para arquivos CSV. Este 
 - **Conversão direta:** Transforma arquivos TXT com notação JSON para arquivos .CSV ou .JSON formatados de forma simples.
 - **Compatibilidade:** Funciona no ambiente Node.js.
 
+## Instalação do NodeJS
+
+- **Siga as instruções do link:**
+    > [Instalar NodeJS](https://www.alura.com.br/artigos/como-instalar-node-js-windows-linux-macos?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conteúdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=682526577071&hsa_src=g&hsa_tgt=dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAiA98WrBhAYEiwA2WvhOvPyhzmzGJJDKXLX5B_ylZCQAB5WzVyt8k06TdqgY2mX0IMwmJ2jCRoCqYcQAvD_BwE)
+
 ## Como Usar
 
 1. **Clone o repositório:**
@@ -25,7 +30,9 @@ Um conversor simples de arquivos TXT com notação JSON para arquivos CSV. Este 
 
     Substitua `input.txt` pelo nome do arquivo TXT que contém notação JSON que você deseja converter e `output.csv` pelo nome do arquivo CSV de saída.
 
-3. **Verifique o arquivo convertido:** O arquivo de saída estará disponível no diretório especificado.
+   Se for executado apenas o comando `node converter.js` e nenhum parâmetro for passado, os caminhos padrões serão assumidos e o código irá esperar um arquivo `report.txt` e criará os arquivos `output.json` e `output.csv` no diretório corrente.
+
+4. **Verifique o arquivo convertido:** O arquivo de saída estará disponível no diretório especificado.
 
 ## Exemplo de Formato TXT (JSON)
 
