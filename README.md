@@ -7,6 +7,11 @@ Um conversor simples de arquivos TXT com notação JSON para arquivos CSV. Este 
 - **Conversão direta:** Transforma arquivos TXT com notação JSON para arquivos .CSV ou .JSON formatados de forma simples.
 - **Compatibilidade:** Funciona no ambiente Node.js.
 
+## Instalação do NodeJS
+
+- **Siga as instruções do link:**
+    > [Instalar NodeJS](https://www.alura.com.br/artigos/como-instalar-node-js-windows-linux-macos?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conteúdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=682526577071&hsa_src=g&hsa_tgt=dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAiA98WrBhAYEiwA2WvhOvPyhzmzGJJDKXLX5B_ylZCQAB5WzVyt8k06TdqgY2mX0IMwmJ2jCRoCqYcQAvD_BwE)
+
 ## Como Usar
 
 1. **Clone o repositório:**
