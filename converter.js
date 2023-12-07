@@ -61,44 +61,17 @@ function jsonToCsv(jsonFilePath, csvFilePath) {
     });
 }
 
+const txtFile = 'report.txt';
+const jsonFile = 'output.json';
+const csvFile = 'output.csv';
 /**
- * Verfica parâmetros passados via terminal
- * Se não houver parâmetros, usa arquivos input e output padrões
+* Convertendo TXT para JSON 
+*/
+txtToJson(txtFile, jsonFile);
+
+/**
+ * Convertendo JSON para CSV 
  */
-if (process.argv.length <= 2) {
-    const txtFile = 'report.txt';
-    const jsonFile = 'output.json';
-    const csvFile = 'output.csv';
-
-    console.log('Nenhum parametro passado. Usando arquivos padroes: report.txt, output.json e output.csv');
-} else {
-    const txtFile = process.argv[2];
-    console.log('input_txt:', txtFile);
-
-    if (process.argv.length > 3) {
-        const csvFile = process.argv[3];
-        console.log('output_csv:', csvFile);
-    } else {
-        const csvFile = 'output.csv';
-        console.log('Nenhum parametro passado. Usando arquivo padrao: output.csv');
-    }
-
-    if (process.argv.length > 4) {
-        const jsonFile = process.argv[4];
-        console.log('output_json:', jsonFile);
-    } else {
-        const jsonFile = 'output.json';
-        console.log('Nenhum parametro passado. Usando arquivo padrao: output.json');
-    }
-}
-        /**
-     * Convertendo TXT para JSON 
-     */
-        txtToJson(txtFile, jsonFile);
-
-        /**
-         * Convertendo JSON para CSV 
-         */ 
-        jsonToCsv(jsonFile, csvFile);
+jsonToCsv(jsonFile, csvFile);
 
 
